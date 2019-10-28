@@ -78,4 +78,4 @@ elif len(paragraph) > 0:
     paragraph = paragraph[:-1] + '.'
 
 
-print(pyperclip.copy(paragraph))
+print(paragraph)
