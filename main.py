@@ -2,7 +2,7 @@ import math
 import random
 import string
 import sys
-import pyperclip
+
 
 try:
     LIMIT = int(sys.argv[1])
@@ -19,14 +19,6 @@ for i in words:
         words.remove(i)
 
 words *= math.ceil(LIMIT / len(words))
-random.shuffle(words)
-
-words = words[:LIMIT]
-
-for i in words:
-    if len(i) > 1:
-        LIMIT -= 1
-
 random.shuffle(words)
 words = words[:LIMIT]
 
